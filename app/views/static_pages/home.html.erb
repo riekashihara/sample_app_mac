@@ -4,12 +4,19 @@
 	<head>
 		<title><%=yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
 	</head>
-	<body>
-	 <h1>Sample App</h1>
-	 <p>
+  <body>
+  <div class="center jumbotron">
+	 <h1>Welcome to the Sample App</h1>
+	 <h2>
  	  This is the home page for the
  	  <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
  	   sample application
-	 </p>
-    </body>
+	 </h2>
+    <%=link_to "Sign up now!", signup_path,class:"btn btn-lg btn-primary" %>
+  </div>
+    <img src="/assets/rails.png" align="left">
+    <img src="/assets/pagu.jpeg"　width="400px" height="400px" class="pagu">
+
+
+  </body>
 </html>
