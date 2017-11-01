@@ -14,9 +14,8 @@
 	 </h2>
     <%=link_to "Sign up now!", signup_path,class:"btn btn-lg btn-primary" %>
   </div>
-    <img src="/assets/rails.png" align="left">
-    <img src="/assets/pagu.jpeg"　width="400px" height="400px" class="pagu">
-
+    <%=link_to image_tag("rails.png",alt:"Rails logo"),'http://rubyonrails.org/'%>
+    <%=image_tag 'pagu.jpg', :size=>'300x350',:class=>'pagu'%>
 
   </body>
 </html>
